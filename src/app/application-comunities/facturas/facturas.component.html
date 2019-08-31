@@ -1,0 +1,87 @@
+<app-application-header></app-application-header>
+<div class="container-fluid row">
+  <div class="col-md-6 animated fadeInLeft">
+    <input class="form-control" type="text" placeholder="Filtrar por facturas"
+      [(ngModel)]="filterInvoices">
+    <br>
+    <div class="card">
+      <div class="card-header">
+        <h3>Lista de facturas</h3>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Importe</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Cuenta destino</th>
+              <th scope="col">Pendiente</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of invoices | filter:filterInvoices">
+              <th scope="row">{{item.amount}}</th>
+              <td>{{item.description}}</td>
+              <td>{{item.destination}}</td>
+              <td>{{item.expiry}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 animated fadeInRight">
+    <form #formRegister="ngForm" [formGroup]="form" name="form">
+      <div class="form-group">
+        <label>Amount</label>
+        <input type="text" class="form-control" placeholder="Amount" formControlName="amount" name="amount">
+      </div>
+      <div class="form-group">
+        <label>Destination</label>
+        <input type="text" class="form-control" placeholder="Destination" formControlName="destination"
+          name="destination">
+      </div>
+      <div class="form-group">
+        <label>Date</label>
+        <input type="text" class="form-control" placeholder="Example: 2017-12-06" formControlName="expiry" name="expiry">
+      </div>
+      <div class="form-group">
+        <label>Descripcion</label>
+        <input type="text" class="form-control" placeholder="Descripción" formControlName="description" name="description">
+      </div>
+      <button class="btn btn-block btn-primary" (click)="createInvoice()">Crear facura</button>
+    </form>
+  </div>
+  <div class=" col-md-6 animated fadeInLeft">
+    <br>
+    <br>
+    <br>
+    <input class="form-control" type="text" placeholder="Filtrar por facturas">
+    <br>
+    <div class="card">
+      <div class="card-header">
+        <h3>Expirará pronto</h3>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Proveedor</th>
+              <th scope="col">Importe</th>
+              <th scope="col">Pendiente</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of invoices">
+              <th scope="row">{{item.amount}}</th>
+              <td>{{item.destination}}</td>
+              <td>{{item.expiry}}</td>
+              <td>{{item.description}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

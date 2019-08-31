@@ -1,0 +1,17 @@
+.background-title{
+    background: url(../../assets/img/jobs.jpg);
+    background-size: cover;
+    min-height: 637px;
+    margin-top: 5px;
+    width: auto;
+    text-align: center;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.items-services{
+    min-height: 375px;
+    border-color: green
+}

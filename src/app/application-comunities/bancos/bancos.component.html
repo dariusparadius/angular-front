@@ -1,0 +1,49 @@
+<app-application-header></app-application-header>
+<div class="container-fluid row">
+  <div class="col-md-6 animated fadeInLeft">
+    <div class="card">
+      <div class="card-header">
+        <h3>Extracto de cuentas</h3>
+      </div>
+      <div class="text-danger">
+        Añada un banco utilizando el botón "Añadir banco"
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 animated fadeInLeft">
+    <form #formRegister="ngForm" [formGroup]="form" name="form" (click)="form.valid && createAccount()">
+      <div class="form-group">
+        <label>Amount</label>
+        <input type="text" class="form-control" placeholder="Amount" formControlName="iban">
+      </div>
+      <div class="form-group">
+        <label>Destination</label>
+        <input type="text" class="form-control" placeholder="Destination" formControlName="username">
+      </div>
+      <button class="btn btn-block btn-primary" (click)="createAccount()">Crear facura</button>
+    </form>
+  </div>
+  <div class="col-md-6 animated fadeInRight">
+    <div class="card">
+      <div class="card-header">
+        <h3>Estado de cuentas</h3>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Cuenta</th>
+              <th scope="col">Nombre Cuenta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">{{cuenta.iban}}</th>
+              <th scope="row">{{cuenta.username}}</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

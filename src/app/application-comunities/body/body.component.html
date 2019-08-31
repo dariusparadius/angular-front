@@ -1,0 +1,160 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 animated fadeInLeft">
+      <div class="card">
+        <div class="card-header">
+          <h3>Últimas Transacciones</h3>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Origin</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of transactions">
+                <td>{{item.origin}}</td>
+                <td>{{item.destination}}</td>
+                <td>{{item.amount}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 animated fadeInRight">
+      <div class="card">
+        <div class="card-header">
+          <h3>Últimas facturas</h3>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Importe</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Proveedor</th>
+                <th scope="col">Pendiente</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of invoices">
+                <th scope="row">{{item.amount}}</th>
+                <td>{{item.description}}</td>
+                <td>{{item.destination}}</td>
+                <td>{{item.expiry}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 animated fadeInLeft">
+      <div class="card">
+        <div class="card-header">
+          <h3>Proximos eventos</h3>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Título</th>
+                <th scope="col">Inicio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of transactions">
+                <th scope="row">{{item.amount}}</th>
+                <td>{{item.expiry}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 animated fadeInRight">
+      <div class="card">
+        <div class="card-header">
+          <h3>Cuentas bancarias</h3>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of transactions">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.origin}}</td>
+                <td>{{item.destination}}</td>
+                <td>{{item.amount}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 animated fadeInLeft">
+      <div class="card">
+        <div class="card-header">
+          <h3>Actividades</h3>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of transactions">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.origin}}</td>
+                <td>{{item.destination}}</td>
+                <td>{{item.amount}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 animated fadeInRight">
+      <div class="card">
+        <div class="card-header">
+          <h3>Recibos</h3>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of transactions">
+                <th scope="row">{{item.id}}</th>
+                <td>{{item.origin}}</td>
+                <td>{{item.destination}}</td>
+                <td>{{item.amount}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

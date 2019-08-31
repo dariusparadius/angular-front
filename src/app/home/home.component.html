@@ -1,0 +1,176 @@
+<app-header></app-header>
+
+<div class="background-title d-flex align-items-center justify-content-center">
+  <div class="align-self-center">
+    <div class="text-white">
+      <h1>Tu comunidad de vecinos online ¡Gratis!</h1>
+      <br>
+      <h6>Controla las facturas recibidas, los recibos impagados y el estado de cuentas</h6>
+      <br>
+    </div>
+    <button type="button" class="btn btn-outline-info">Solicita tu presupuesto</button>
+  </div>
+</div>
+<div class="container">
+
+  <div class="text-center mb-5 mt-4">
+    <h1>Servicos que ofrecemos</h1>
+  </div>
+
+  <div class="row text-center">
+
+    <div class="col-md-4">
+      <div class="card p-3 items-services align-items-center">
+        <h1><i class="fas fa-comments"></i></h1>
+        <div class="card-body">
+          <h4 class="card-title">COMUNIDAD ONLINE</h4>
+          <ul>
+            <li>Participa en encustas</li>
+            <li>Solicita información</li>
+            <li>Informa de incidencias</li>
+            <li>Visualiza las actas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="card p-3 items-services align-items-center">
+        <h1><i class="fas fa-clipboard-list"></i></h1>
+        <div class="card-body">
+          <h4 class="card-title">LAS CUENTAS CLARAS</h4>
+          <ul>
+            <li>Facturas recibidas, vencidas y por pagar.</li>
+            <li>Estado de la tesorería.</li>
+            <li>Presupuestos.</li>
+            <li>Morosidad.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-3 items-services align-items-center">
+        <h1><i class="far fa-calendar-alt"></i></h1>
+        <div class="card-body">
+          <h4 class="card-title">ADMINISTRADOR</h4>
+          <ul>
+            <li>Alta de propietarios, inmuebles y participación de cada propietario.</li>
+            <li>Controla los gastos, pagos parciales, recibos, ingresos y gastos.</li>
+            <li>Aviso de eventos, calendario.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <h4>Eres una comunidad de vecinos</h4>
+      <h2>Gestiona tu comunidad fácilmente</h2>
+
+      <p>Con nuestra aplicación Web, completamente gratuita, te facilitamos una de las gestiones principales para
+        cualquier Comunidad de vecinos, la que en ocasiones crea mayor dificultad y más discusiones entre los
+        propietarios; la solicitud y propuestas de presupuestos frente a cualquier reparación, mejora o mantenimiento de
+        los espacios comunes de la Comunidad.
+      </p>
+
+      <br>
+      <br>
+
+      <h4>Eres una empresa de servicios</h4>
+      <h2>Ofrece tus servicios a Propietarios</h2>
+
+      <p>Registraros gratuitamente en la página Web para acceder a todas las ofertas que los Presidentes y
+        administradores de Comunidades de vecinos y propietarios publiquen cuando tengan una necesidad real. ¡Corre,
+        solo se permite recibir 3 presupuestos por oferta publicada! Y seguro que ya hay empresas de tu competencia
+        utilizando la página Web.</p>
+      <br>
+
+      <button type="button" [routerLink]="['/about']" class="btn btn-outline-info">Saber más sobre
+        tucomunidad.com</button>
+    </div>
+
+    <div class="col-md-6 border border-dark rounded">
+      <div class="row d-flex justify-content-between p-3">
+        <h6>Últimas solicitudes de presupuesto de las comunidades</h6>
+        <h2><i class="fas fa-users"></i></h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">img</div>
+        <div class="col-md-8">
+          <h4>Cambiar cabina de ascensor</h4>
+          <div class="row p-1">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="ml-4">27 de junio de 2019</span>
+          </div>
+          <div class="row p-1">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="ml-4">Iangero - (Asturias)</span>
+          </div>
+          <div class="row p-1">
+            <i class="fas fa-tag"></i>
+            <span class="ml-4">Ascensores</span>
+          </div>
+
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-md-4">img</div>
+        <div class="col-md-8">
+          <h4>Presupuesto de mantenimiento de ascensores</h4>
+          <div class="row p-1">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="ml-4">21 de junio de 2019</span>
+          </div>
+          <div class="row p-1">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="ml-4">Jaén - (Jaén)</span>
+          </div>
+          <div class="row p-1">
+            <i class="fas fa-tag"></i>
+            <span class="ml-4">Ascensores</span>
+          </div>
+
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row mb-4">
+        <div class="col-md-4">img</div>
+        <div class="col-md-8">
+          <h4>Can Branqueda</h4>
+          <div class="row p-1">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="ml-4">22 de mayo de 2019</span>
+          </div>
+          <div class="row p-1">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="ml-4">RIUDARENES - (Girona)</span>
+          </div>
+          <div class="row p-1">
+            <i class="fas fa-tag"></i>
+            <span class="ml-4">Administradores de fincas</span>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<app-go-top-button></app-go-top-button>
+
+<app-footer></app-footer>
