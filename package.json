@@ -32,7 +32,8 @@
     "sweetalert2": "^8.16.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26",
-    "typescript": "~3.2.2"
+    "typescript": "~3.2.2",
+    "express": "^4.16.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
